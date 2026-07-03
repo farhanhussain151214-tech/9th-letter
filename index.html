@@ -20,7 +20,15 @@ scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(180deg,#ffe6ef,#fff7fa);
+background:linear-gradient(
+135deg,
+#ffb3d9,
+#ff8fbc,
+#ffc9df,
+#ffe6f2,
+#fff9fc
+);
+background-attachment:fixed;
 font-family:'Poppins',sans-serif;
 overflow-x:hidden;
 color:#5a2140;
@@ -123,6 +131,21 @@ transform:scale(1.03);
 background:#ff2d74;
 }
 
+.photo-frame{
+margin:25px auto;
+width:230px;
+padding:8px;
+border-radius:25px;
+background:linear-gradient(135deg,#ff6ea8,#ff9cc5,#ffd6e8);
+box-shadow:0 12px 30px rgba(255,105,180,.45);
+}
+
+.photo-frame img{
+width:100%;
+display:block;
+border-radius:18px;
+}
+
 </style>
 </head>
 
@@ -141,6 +164,10 @@ background:#ff2d74;
 
 <h1>Dear Kruthika ❤️</h1>
 <h2>Happy 9 Months Together</h2>
+
+<div class="photo-frame">
+    <img src="images/kruthika.jpg" alt="Our Photo">
+</div>
 
 <div class="card">
 
