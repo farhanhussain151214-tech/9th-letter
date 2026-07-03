@@ -203,8 +203,8 @@ Forever Yours ❤️
 
 </div>
 
-<button onclick="showLoveMessage()">
-Tap Here 💖
+<button onclick="showLovePopup()">
+    Tap Here 💖
 </button>
 
 <div class="footer">
@@ -234,6 +234,134 @@ Happy 9 Months, Princess. ❤️✨🧿
 Forever Yours,
 Farhan 💝`);
 }
+</script>
+
+<!-- Romantic Popup -->
+
+<div id="lovePopup" class="popup">
+    <div class="popup-box">
+
+        <h2>💖 My Dearest Kruthika 💖</h2>
+
+        <p>
+            Happy 9 Months, My Love ❤️
+            <br><br>
+
+            These 273 days have been the most beautiful journey of my life because of you.
+
+            Every smile, every laugh, every memory, every little fight, and every moment with you has made my life more meaningful.
+
+            Thank you for choosing me every single day.
+
+            I promise to keep loving you, supporting you, and growing with you.
+
+            You are my safe place, my happiness, my best friend, and my forever.
+
+            <br><br>
+
+            <b>I Love You Endlessly. ❤️✨🧿</b>
+
+            <br><br>
+
+            Forever Yours,<br>
+            <b>Farhan 💝</b>
+        </p>
+
+        <button class="close-btn" onclick="closeLovePopup()">
+            ❤️ Close ❤️
+        </button>
+
+    </div>
+</div>
+
+<style>
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+display:flex;
+justify-content:center;
+align-items:center;
+visibility:hidden;
+opacity:0;
+transition:.4s;
+z-index:999;
+}
+
+.popup.show{
+visibility:visible;
+opacity:1;
+}
+
+.popup-box{
+width:90%;
+max-width:360px;
+padding:30px;
+border-radius:25px;
+background:linear-gradient(135deg,#fff0f6,#ffe4ec);
+box-shadow:0 20px 45px rgba(255,105,180,.35);
+text-align:center;
+animation:popup .5s ease;
+border:2px solid #ff9ec6;
+}
+
+@keyframes popup{
+from{
+transform:scale(.7);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+.popup-box h2{
+font-family:'Great Vibes',cursive;
+font-size:38px;
+color:#ff2d74;
+margin-bottom:20px;
+}
+
+.popup-box p{
+line-height:1.8;
+font-size:15px;
+color:#5a2140;
+}
+
+.close-btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff4f8b;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.close-btn:hover{
+transform:scale(1.05);
+background:#ff2d74;
+}
+
+</style>
+
+<script>
+
+function showLovePopup(){
+document.getElementById("lovePopup").classList.add("show");
+}
+
+function closeLovePopup(){
+document.getElementById("lovePopup").classList.remove("show");
+}
+
 </script>
 
 </body>
